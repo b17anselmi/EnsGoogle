@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>ENS Registration</title>
+  <meta name="description" content="ENS Address Registration">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <div class="logo-wrapper">
+            <img class="logo" src="ENS_Avatar-White_300x300_0001.png">
+            <h1>ENS<br><span>Address Book</span></h1>
+
+
+          <div class="dropdown">
+              <select class="dropdown__selectbox" name="types" onchange="changeCategory(value)">
+                  <option value="">- Select -</option>
+                  <option value="Exchange">Exchange</option>
+                  <option value="Miner">Miner</option>
+                  <option value="DApp">DApp</option>
+                  <option value="Token">Token</option>
+                  <option value="User">User</option>
+                </select>
+              </div>
+              <form id="searchForm" class="search-bar" autocomplete="off">
+                <div class="autocomplete" style="width:500px;">
+                  <input id="myInput" type="text" name="ENS" placeholder="ENS name">
+                  <button type="button" onClick="submitSearch()">Search</button>
+                </div>
+              </form>
+<!--
+        <div class="dataoutput-wrapper" id="dataoutputWrapper">
+            <div class="dataoutput-item">
+                <p class="dataoutput-label">ENS name:</p>
+                <p class="dataoutput-value">BlockParty</p>
+            </div>
+            <div class="dataoutput-item">
+                <p class="dataoutput-label">Address:</p>
+                <p class="dataoutput-value"><a target="_blank" href="https://etherscan.io/address/0x144db63041008faee3dde3623a54cc824f5bdd60">0x144db63041008faee3dde3623a54cc824f5bdd60</a></p>
+            </div>
+            <div class="dataoutput-item">
+                <p class="dataoutput-label">Owner:</p>
+                <p class="dataoutput-value">Makoto Inoue</p>
+            </div>
+            <div class="dataoutput-item">
+                <p class="dataoutput-label">Twitter:</p>
+                <p class="dataoutput-value">@makoto_inoue</p>
+            </div>
+        </div>
+      -->
+    </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
