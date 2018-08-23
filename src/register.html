@@ -4,7 +4,7 @@
   form {
 /* Just to center the form on the page */
 margin: 0 auto;
-width: 400px;
+width: 800px;
 /* To see the outline of the form */
 padding: 1em;
 border: 1px solid #CCC;
@@ -17,7 +17,7 @@ margin-top: 1em;
 
 label {
 display: inline-block;
-width: 90px;
+width: 300px;
 text-align: left;
 }
 
@@ -25,9 +25,8 @@ input, textarea {
 font: 1em sans-serif;
 
 /* To give the same size to all text fields */
-width: 300px;
+width: 500px;
 box-sizing: border-box;
-
 
 border: 1px solid #999;
 }
@@ -45,12 +44,12 @@ height: 5em;
 
 .button {
 
-padding-left: 90px;
+padding-left: 0px;
 }
 
 button {
 
-margin-left: .5em;
+margin-left: .0em;
 }
   </style>
   <meta charset="utf-8">
@@ -70,21 +69,28 @@ margin-left: .5em;
             <h1>ENS<br><span>Address Book</span></h1>
             <h2>Register your ENS name today!</h2>
           </div>
+
           <form action="/Domain Registration" method="post">
             <div>
-              <label for="ENSname">ENS Name:</label>
-              <input type="text" id="ENSname" name="ENS_name">
+              <label for="address">Public Address:</label>
+              <input type="text" id="address" name="address">
             </div>
             <div>
-              <label for="address">Address:</label>
-              <input type="address" id="address" name="registeringAddress">
+              <label for="ensName">ENS Name:</label>
+              <input type="text" id="ensName" name="ENSname">
             </div>
             <div>
               <label for="owner">Owner:</label>
-              <input type="owner" id="owner" name="registeringOwner">
+              <input type="text" id="owner" name="registeringOwner">
             </div>
-            <div class="toOptional">
-              <button type="button" name="next">Next</button>
+
+            <div class="button">
+              <button type="button"href="" name="button">Submit</button>
+              <!--
+              <a href="registerCont.html">
+                <button>Continue</button>
+              </a>
+            -->
             </div>
           </form>
         </div>
