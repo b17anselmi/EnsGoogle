@@ -237,7 +237,6 @@ font: 1em sans-serif;
 /* To give the same size to all text fields */
 width: 500px;
 box-sizing: border-box;
-
 }
 
 input:focus, textarea:focus {
