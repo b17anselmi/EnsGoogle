@@ -83,14 +83,22 @@ margin-left: .0em;
               <label for="owner">Owner:</label>
               <input type="text" id="owner" name="registeringOwner">
             </div>
+            <div class="profile">
+              <div class="photo">
+                <label for="profile">Upload Photo:</label>
+                <input type="file" accept="image/*">
+                <div class="photo__helper">
+                  <div class="photo__frame photo__frame--circle">
+                    <canvas class="photo__canvas"></canvas>
 
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="" alt="" class="preview">
+    <img src="" alt="" class="preview preview--rounded">
             <div class="button">
               <button type="button"href="" name="button">Submit</button>
-              <!--
-              <a href="registerCont.html">
-                <button>Continue</button>
-              </a>
-            -->
             </div>
           </form>
         </div>
