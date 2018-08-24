@@ -177,7 +177,7 @@ input {
 }
 input[type=text] {
   background-color: #f1f1f1;
-  width: 0%;
+  width: 100%;
 }
 button {
   background-color: #4597f2;
