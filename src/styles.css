@@ -48,6 +48,17 @@ h1 span {
   display: none;
 }
 
+h2 {
+  color: #4597f2;
+  width: 500px;
+
+}
+h3 {
+  color: #4597f2;
+  width: 600px;
+
+}
+
 .dataoutput-wrapper--show {
   color: #525252;
   background-color: #f2f4fd;
@@ -169,7 +180,7 @@ input[type=text] {
   width: 100%;
 }
 button {
-  background-color: DodgerBlue;
+  background-color: #4597f2;
   color: #fff;
   padding: 12px;
   font-size: 16px;
