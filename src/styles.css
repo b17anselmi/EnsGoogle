@@ -177,7 +177,7 @@ input {
 }
 input[type=text] {
   background-color: #f1f1f1;
-  width: 100%;
+  width: 0%;
 }
 button {
   background-color: #4597f2;
@@ -214,7 +214,7 @@ button {
 form {
 /* Just to center the form on the page */
 margin: 0 auto;
-width: 800px;
+width: 500px;
 /* To see the outline of the form */
 padding: 1em;
 border: 1px solid #CCC;
@@ -235,7 +235,7 @@ input, textarea {
 font: 1em sans-serif;
 
 /* To give the same size to all text fields */
-width: 500px;
+width: 300px;
 box-sizing: border-box;
 }
 
