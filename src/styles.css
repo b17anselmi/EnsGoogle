@@ -238,7 +238,6 @@ font: 1em sans-serif;
 width: 500px;
 box-sizing: border-box;
 
-border: 1px solid #999;
 }
 
 input:focus, textarea:focus {
