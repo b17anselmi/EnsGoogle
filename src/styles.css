@@ -258,3 +258,20 @@ padding-left: 0px;
 button {
 margin-left: .0em;
 }
+
+footer {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-color: #fffff;
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: #161611;
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom:0;
+}

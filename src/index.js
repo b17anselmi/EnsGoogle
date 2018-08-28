@@ -25,6 +25,10 @@ function search(type) {
     return results;
 }
 
+function register() {
+  
+}
+
 
 
 /*
