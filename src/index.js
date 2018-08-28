@@ -1,3 +1,32 @@
+var AddressBookArtifacts = require('../build/contracts/AddressBook.json');
+var AddressBookContract = TruffleContract(AddressBookArtifacts);
+
+
+function search(type) {
+  var results = [];
+  if (type === "Exchange")
+    for (int i = 0, i < (AddressBookContract.exchangeBook).length, i++){
+      results.push(AddressBookContract.searchByIndex(i, type));
+    } else if (type === "Miner") {
+      for (int i = 0, i < (AddressBookContract.minerBook).length, i++){
+        results.push(AddressBookContract.searchByIndex(i, type));
+    } else if (type === "DApp") {
+      for (int i = 0, i < (AddressBookContract.dappBook).length, i++){
+        results.push(AddressBookContract.searchByIndex(i, type));
+    } else if (type === "Token") {
+      for (int i = 0, i < (AddressBookContract.dappBook).length, i++){
+        results.push(AddressBookContract.searchByIndex(i, type));
+    } else if (type === "User") {
+      for (int i = 0, i < (AddressBookContract.dappBook).length, i++){
+        results.push(AddressBookContract.searchByIndex(i, type));
+    } else {
+
+    }
+    return results;
+}
+
+
+
 /*
 import ENS from 'ethereum-ens';
 
@@ -7,8 +36,7 @@ var ENS = require('ethereum-ens');
 var ENSArtifacts = require('../build/contracts/ENSRegistry.json');
 var ENSContract = TruffleContract(ENSArtifacts);
 var web3 = new Web3();
-var AddressBookArtifacts = require('../build/contracts/AddressBook.json');
-var AddressBookContract = TruffleContract(AddressBookArtifacts);
+
 
 var provider = new Web3.providers.HttpProvider('http://localhost:8545');
 web3.setProvider(provider);

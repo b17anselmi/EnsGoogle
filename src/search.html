@@ -277,7 +277,7 @@
   <!--<link rel="stylesheet" href="styles.css">-->
 
 </head>
-<body>
+<body onload="search()"> <!--add in index.js -->
     <div class="body-wrapper">
         <div class="logo-wrapper">
             <img class="logo" src="ENS_Avatar-White_300x300_0001.png">
@@ -286,7 +286,7 @@
 <form id="searchForm" class="search-bar" autocomplete="off">
       <div class="autocomplete">
           <div class="dropdown">
-              <select class="dropdown__selectbox" name="types" onchange="changeCategory(value)">
+              <select id="type" class="dropdown__selectbox" name="types" onchange="changeCategory(value)">
                   <option value="">- Select -</option>
                   <option value="Exchange">Exchange</option>
                   <option value="Miner">Miner</option>
@@ -297,11 +297,16 @@
               </div>
 
 
-                  <input id="myInput" type="text" name="ENS" placeholder="ENS name">
+                  <input id="search" type="text" name="ENS" placeholder="ENS name">
                   <button type="button" onClick="submitSearch()">Search</button>
                 </div>
               </form>
 
+              <div id="results">
+
+              </div>
+
+<!--
         <div class="dataoutput-wrapper" id="dataoutputWrapper">
             <div class="dataoutput-item">
                 <p class="dataoutput-label">ENS name:</p>
@@ -320,7 +325,7 @@
                 <p class="dataoutput-value">@makoto_inoue</p>
             </div>
         </div>
-
+-->
     </div>
   <script src="scripts.js"></script>
 </body>
