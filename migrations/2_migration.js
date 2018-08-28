@@ -1,5 +1,5 @@
-var Migrations = artifacts.require("./AddressBook.sol");
+var AddressBook = artifacts.require("./AddressBook.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(Migrations);
+  deployer.deploy(AddressBook);
 };
