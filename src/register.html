@@ -27,6 +27,17 @@
                 <label for="ensName">*ENS Name:</label>
                 <input type="text" id="ensName" name="ENSname" required>
               </div>
+              <div class="dropdown">
+                  <label for="type">*Address Type:</label><br>
+                  <select id="type" class="dropdown__selectbox" name="types" onchange="changeCategory(value)" required>
+                      <option value="">- Select -</option>
+                      <option value="Exchange">Exchange</option>
+                      <option value="Miner">Miner</option>
+                      <option value="DApp">DApp</option>
+                      <option value="Token">Token</option>
+                      <option value="User">User</option>
+                    </select>
+                  </div>
               <div>
                 <label for="owner">Owner Name:</label>
                 <input type="text" id="owner" name="registeringOwner">
